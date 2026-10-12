@@ -11,6 +11,7 @@
 #include "freertos/task.h"
 
 #include "modbus_rtu.h"
+#include "fault_injection.h"
 #include "register_map.h"
 
 #define MODBUS_UART UART_NUM_2
