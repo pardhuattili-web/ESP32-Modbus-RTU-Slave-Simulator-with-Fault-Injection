@@ -1,5 +1,7 @@
 # ESP32 Modbus RTU Slave Simulator with Fault Injection
 
+![Platform](https://img.shields.io/badge/platform-ESP32-E7352C) ![Framework](https://img.shields.io/badge/framework-ESP--IDF-blue) ![Protocol](https://img.shields.io/badge/protocol-Modbus%20RTU-1976D2) ![CI](https://img.shields.io/badge/tests-C%20%2B%20Python-informational)
+
 ![Platform](https://img.shields.io/badge/platform-ESP32-E7352C)
 ![Framework](https://img.shields.io/badge/framework-ESP--IDF-blue)
 ![Protocol](https://img.shields.io/badge/protocol-Modbus%20RTU-1976D2)
