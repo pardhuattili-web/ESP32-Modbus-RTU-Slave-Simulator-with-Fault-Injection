@@ -13,19 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure host test target
+      - name: Configure
         run: cmake -S . -B build-host -DBUILD_HOST_TESTS=ON
       - name: Build
         run: cmake --build build-host --parallel
-      - name: Run protocol unit tests
+      - name: Test
         run: ctest --test-dir build-host --output-on-failure
-
-  python-harness-tests:
+  python-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run Python unit tests
+      - name: Test harness logic
         run: python -m unittest discover -s tests -p 'test_*.py' -v
